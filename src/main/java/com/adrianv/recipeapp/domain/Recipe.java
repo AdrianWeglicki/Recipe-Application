@@ -26,7 +26,7 @@ public class Recipe {
     private Difficulty difficulty;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "recipe")
-    private Set<Ingredient> ingredients = new HashSet<>();
+    private Set<Ingredient>   ingredients = new HashSet<>();
 
     @OneToOne(cascade = CascadeType.ALL)
     private Notes notes;
